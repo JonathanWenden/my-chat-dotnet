@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,6 +43,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,23 +53,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommandLineArgumentParser.cs" />
-    <Compile Include="Conversation.cs" />
+    <Compile Include="Exporters\CommandLineArgumentParser.cs" />
+    <Compile Include="Exporters\Conversation.cs" />
     <Compile Include="ConversationExporter.cs" />
-    <Compile Include="ConversationExporterConfiguration.cs" />
-    <Compile Include="Message.cs" />
+    <Compile Include="Exporters\ConversationExporterConfiguration.cs" />
+    <Compile Include="Enums\CommandLineArgumentType.cs" />
+    <Compile Include="Exceptions\NullMessagesException.cs" />
+    <Compile Include="Exporters\Exporter.cs" />
+    <Compile Include="Filters\WordFilter.cs" />
+    <Compile Include="Structs\CommandLineArgument.cs" />
+    <Compile Include="Exceptions\MessageNotFoundException.cs" />
+    <Compile Include="Exceptions\UserNotInChatException.cs" />
+    <Compile Include="Filters\MessageFilter.cs" />
+    <Compile Include="Filters\UserFilter.cs" />
+    <Compile Include="Interfaces\IFilter.cs" />
+    <Compile Include="Exporters\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="chat.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{a89d91f2-a57e-44c7-afd9-2724fa3b0bc3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

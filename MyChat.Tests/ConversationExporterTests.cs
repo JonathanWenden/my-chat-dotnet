@@ -2,6 +2,7 @@
 using System.Linq;
 using MyChat;
 using Newtonsoft.Json;
+using MindLink.Recruitment.MyChat.Exporters;
 
 namespace MindLink.Recruitment.MyChat.Tests
 {
@@ -20,12 +21,11 @@ namespace MindLink.Recruitment.MyChat.Tests
         [TestMethod]
         public void ExportingConversationExportsConversation()
         {
-            ConversationExporter exporter = new ConversationExporter();
+            Exporter exporter = new Exporter();
 
             exporter.ExportConversation("chat.txt", "chat.json");
-
+                        
             var serializedConversation = new StreamReader(new FileStream("chat.json", FileMode.Open)).ReadToEnd();
-
             Conversation savedConversation = JsonConvert.DeserializeObject<Conversation>(serializedConversation);
 
             Assert.AreEqual("My Conversation", savedConversation.name);

@@ -1,0 +1,8 @@
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\obj\Debug\Common.Tests.csprojResolveAssemblyReference.cache
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Common.Tests.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Common.Tests.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Common.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Common.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\obj\Debug\Common.Tests.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\obj\Debug\Common.Tests.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Common.Tests.dll.config

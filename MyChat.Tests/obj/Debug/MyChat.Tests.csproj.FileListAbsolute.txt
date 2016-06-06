@@ -1,0 +1,13 @@
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\obj\Debug\MyChat.Tests.csprojResolveAssemblyReference.cache
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\chat.txt
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\MindLink.Recruitment.MyChat.Tests.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\MindLink.Recruitment.MyChat.Tests.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\MindLink.Recruitment.MyChat.exe
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\Newtonsoft.Json.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\MindLink.Recruitment.MyChat.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\Newtonsoft.Json.xml
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\obj\Debug\MindLink.Recruitment.MyChat.Tests.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\obj\Debug\MindLink.Recruitment.MyChat.Tests.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\Common.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\Common.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat.Tests\bin\Debug\MindLink.Recruitment.MyChat.Tests.dll.config

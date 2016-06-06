@@ -1,0 +1,11 @@
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\MindLink.Recruitment.MyChat.exe.config
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\obj\Debug\MyChat.csprojResolveAssemblyReference.cache
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\chat.txt
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\MindLink.Recruitment.MyChat.exe
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\MindLink.Recruitment.MyChat.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Newtonsoft.Json.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Newtonsoft.Json.xml
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\obj\Debug\MindLink.Recruitment.MyChat.exe
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\obj\Debug\MindLink.Recruitment.MyChat.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Common.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Common.pdb

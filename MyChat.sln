@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio Express 2012 for Windows Desktop
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChat", "MyChat\MyChat.csproj", "{246D2511-9B28-44F3-8D05-7EBFAB79C95F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChat.Tests", "MyChat.Tests\MyChat.Tests.csproj", "{35295892-C40D-484F-967C-44328F8C0BCC}"
@@ -11,6 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9E0E0854-F728-4C92-94DB-1488A686A190}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{A89D91F2-A57E-44C7-AFD9-2724FA3B0BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Tests", "Common.Tests\Common.Tests.csproj", "{2D16837E-F9EC-4276-82DF-C0B1D59EFB15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +35,14 @@ Global
 		{35295892-C40D-484F-967C-44328F8C0BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35295892-C40D-484F-967C-44328F8C0BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35295892-C40D-484F-967C-44328F8C0BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89D91F2-A57E-44C7-AFD9-2724FA3B0BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89D91F2-A57E-44C7-AFD9-2724FA3B0BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89D91F2-A57E-44C7-AFD9-2724FA3B0BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89D91F2-A57E-44C7-AFD9-2724FA3B0BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D16837E-F9EC-4276-82DF-C0B1D59EFB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D16837E-F9EC-4276-82DF-C0B1D59EFB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D16837E-F9EC-4276-82DF-C0B1D59EFB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D16837E-F9EC-4276-82DF-C0B1D59EFB15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

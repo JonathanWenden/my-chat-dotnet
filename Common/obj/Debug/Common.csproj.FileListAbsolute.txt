@@ -1,0 +1,5 @@
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common\bin\Debug\Common.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common\bin\Debug\Common.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common\obj\Debug\Common.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common\obj\Debug\Common.pdb
