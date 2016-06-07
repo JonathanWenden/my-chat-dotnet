@@ -5,9 +5,14 @@ using System.IO;
 using System.Text;
 using Newtonsoft.Json;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MindLink.Recruitment.MyChat;
 using MindLink.Recruitment.MyChat.Filters;
 using MindLink.Recruitment.MyChat.Exceptions;
 using MindLink.Recruitment.MyChat.Exporters;
+using MindLink.Recruitment.MyChat.Interfaces;
+using MindLink.Recruitment.MyChat.Enums;
+using Microsoft.Practices.Unity;
+
 using MyChat;
 
 namespace MindLink.Recruitment.MyChat.Tests
@@ -17,7 +22,9 @@ namespace MindLink.Recruitment.MyChat.Tests
     {
         private List<Message> ReadMessages()
         {
-            Exporter exporter = new Exporter();
+            UnityContainer container = new UnityContainer();
+            container.AddNewExtension<MyChatUnityContainer>();
+            IExporter exporter = container.Resolve<IExporter>();
 
             exporter.ExportConversation("chat.txt", "chat.json");
             Conversation savedConversation;
@@ -29,7 +36,7 @@ namespace MindLink.Recruitment.MyChat.Tests
             }
 
 
-            return savedConversation != null ? savedConversation.messages.ToList() : new List<Message>();
+            return savedConversation.messages != null ? savedConversation.messages.ToList() : new List<Message>();
         }
 
         [TestMethod]
@@ -68,8 +75,7 @@ namespace MindLink.Recruitment.MyChat.Tests
             
             List<Message> returnMessages = filter.Filter(messages, new string[] { content }).ToList();
             Assert.IsNotNull(returnMessages);
-            Assert.AreNotEqual(messages, returnMessages);
-            Assert.IsTrue(returnMessages.Count() == 0);
+            CollectionAssert.AreEqual(messages, returnMessages);
         }
 
         [TestMethod]

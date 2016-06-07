@@ -6,3 +6,12 @@
 \\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\obj\Debug\Common.Tests.dll
 \\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\obj\Debug\Common.Tests.pdb
 \\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Common.Tests.dll.config
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\Common.Tests\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml

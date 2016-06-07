@@ -9,6 +9,9 @@
     using MindLink.Recruitment.MyChat.Exporters;
     using MindLink.Recruitment.MyChat.Enums;
     using MindLink.Recruitment.MyChat.Filters;
+    using MindLink.Recruitment.MyChat.Interfaces;
+    using Microsoft.Practices.Unity;
+    using MindLink.Recruitment.MyChat;
     /// <summary>
     /// Represents a conversation exporter that can read a conversation and write it out in JSON.
     /// </summary>
@@ -22,24 +25,23 @@
         /// </param>
         static void Main(string[] args)
         {
-            var conversationExporter = new ConversationExporter();
-            ConversationExporterConfiguration configuration = new CommandLineArgumentParser().ParseCommandLineArguments(args);
+            UnityContainer container = new UnityContainer();
+            container.AddNewExtension<MyChatUnityContainer>();
 
-            Exporter export = new Exporter();
+            ICommandLineParser parser = container.Resolve<ICommandLineParser>();
+            ConversationExporterConfiguration configuration = parser.ParseCommandLineArguments(args);
+
+            IExporter export = container.Resolve<IExporter>();
             foreach (var argument in configuration.commandLineArguments)
             {
-                switch (argument.ArgumentType)
+                if (argument.ArgumentType == CommandLineArgumentType.WordFilter)
                 {
-                    case CommandLineArgumentType.UserFilter:
-                        export.AddFilter(new UserFilter(), argument.AdditionalParameters);
-                        break;
-                    case CommandLineArgumentType.MessageFilter:
-                        export.AddFilter(new MessageFilter(), argument.AdditionalParameters);
-                        break;
-                    case CommandLineArgumentType.WordFilter:
-                        export.AddFilter(new WordFilter("*redacted*"), argument.AdditionalParameters);
-                        break;
+                    export.AddFilter(container.Resolve<IFilter>(argument.ArgumentType.ToString(), new ParameterOverride("replacement", "*redacted*")), argument.AdditionalParameters);
                 }
+                else
+                {
+                    export.AddFilter(container.Resolve<IFilter>(argument.ArgumentType.ToString()), argument.AdditionalParameters);
+                }                
             }
             export.ExportConversation(configuration.inputFilePath, configuration.outputFilePath);
         }

@@ -2,7 +2,13 @@
 using System.Linq;
 using MyChat;
 using Newtonsoft.Json;
+using MindLink.Recruitment.MyChat;
+using MindLink.Recruitment.MyChat.Filters;
+using MindLink.Recruitment.MyChat.Exceptions;
 using MindLink.Recruitment.MyChat.Exporters;
+using MindLink.Recruitment.MyChat.Interfaces;
+using MindLink.Recruitment.MyChat.Enums;
+using Microsoft.Practices.Unity;
 
 namespace MindLink.Recruitment.MyChat.Tests
 {
@@ -21,7 +27,9 @@ namespace MindLink.Recruitment.MyChat.Tests
         [TestMethod]
         public void ExportingConversationExportsConversation()
         {
-            Exporter exporter = new Exporter();
+            UnityContainer container = new UnityContainer();
+            container.AddNewExtension<MyChatUnityContainer>();
+            IExporter exporter = container.Resolve<IExporter>();
 
             exporter.ExportConversation("chat.txt", "chat.json");
                         

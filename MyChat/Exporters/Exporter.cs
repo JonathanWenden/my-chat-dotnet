@@ -15,14 +15,14 @@ using MindLink.Recruitment.MyChat.Filters;
 
 namespace MindLink.Recruitment.MyChat.Exporters
 {
-    public class Exporter
+    public class Exporter : IExporter
     {
         private ILogger _logger;
         private Dictionary<IFilter, List<string>> _filters;
 
-        public Exporter()
+        public Exporter(ILogger logger)
         {
-            _logger = new Logger();
+            _logger = logger;
             _logger.IntitializeLogger(ConfigurationManager.AppSettings["LogFile"]);
             _filters = new Dictionary<IFilter, List<string>>();
         }
@@ -79,7 +79,7 @@ namespace MindLink.Recruitment.MyChat.Exporters
         /// <exception cref="Exception">
         /// Thrown when something else went wrong.
         /// </exception>
-        public Conversation ReadConversation(string inputFilePath)
+        private Conversation ReadConversation(string inputFilePath)
         {
             try
             {
@@ -139,7 +139,7 @@ namespace MindLink.Recruitment.MyChat.Exporters
         /// <exception cref="Exception">
         /// Thrown when something else bad happens.
         /// </exception>
-        public void WriteConversation(Conversation conversation, string outputFilePath)
+        private void WriteConversation(Conversation conversation, string outputFilePath)
         {
             try
             {

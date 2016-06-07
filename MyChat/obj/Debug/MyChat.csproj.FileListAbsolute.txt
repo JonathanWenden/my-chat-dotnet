@@ -9,3 +9,12 @@
 \\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\obj\Debug\MindLink.Recruitment.MyChat.pdb
 \\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Common.dll
 \\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Common.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.Unity.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.Unity.xml
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+\\JRWDESKTOP\Users\Jonathan\Documents\Visual Studio 2015\Projects\my-chat-dotnet\MyChat\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
