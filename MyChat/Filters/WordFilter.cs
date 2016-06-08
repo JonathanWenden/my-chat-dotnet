@@ -39,11 +39,16 @@ namespace MindLink.Recruitment.MyChat.Filters
             {
                 return messages;
             }
+            else if (filterParameter.Intersect(messages.Select(t => t.content)).Any())
+            {
+                return messages.Where(t => t.content.Split(' ').Intersect(filterParameter).Any());
+                //return messages.Where(t => t.content.Contains(filterParameter[0]));
+            }
             else
             {
                 foreach (string filter in filterParameter)
                 {
-                   messages = messages.Select(t => replaceContent(t, filter));
+                    messages = messages.Select(t => replaceContent(t, filter));
                 }
                 return messages;
             }

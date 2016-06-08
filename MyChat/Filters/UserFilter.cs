@@ -28,13 +28,17 @@ namespace MindLink.Recruitment.MyChat.Filters
             {
                 return messages;
             }
-            else if (messages.Select(t => t.senderId == filterParameter[0]).Count() > 0)
+            else if (!messages.Any(t => filterParameter.Contains(t.senderId)))
             {
-                return messages.Where(t => t.senderId == filterParameter[0]);
+                return new List<Message>();
+            }
+            else if (messages.Any(t => filterParameter.Contains(t.senderId)))
+            {
+                return messages.Where(t => filterParameter.Contains(t.senderId));
             }
             else
             {
-                throw new UserNotInChatException("User: " + filterParameter + " not found in messages");
+                return messages;
             }
         }
     }

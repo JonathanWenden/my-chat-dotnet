@@ -55,14 +55,21 @@ namespace MindLink.Recruitment.MyChat.Tests
         [TestMethod]
         public void CannotFilterBasedOnNonExistantWord()
         {
-            MessageFilter filter = new MessageFilter();
-            var messages = ReadMessages();
-            string content = "Non-Existant";
+            try
+            {
+                MessageFilter filter = new MessageFilter();
+                var messages = ReadMessages();
+                string content = "Non-Existant";
 
-            List<Message> returnMessages = filter.Filter(messages, new string[] { content }).ToList();
-            Assert.IsNotNull(returnMessages);
-            Assert.AreNotEqual(messages, returnMessages);
-            Assert.IsTrue(returnMessages.Count() == 0);
+                List<Message> returnMessages = filter.Filter(messages, new string[] { content }).ToList();
+                Assert.IsNotNull(returnMessages);
+                Assert.AreNotEqual(messages, returnMessages);
+                Assert.IsTrue(returnMessages.Count() == 0);
+            }
+            catch (MessageNotFoundException)
+            {
+                Assert.IsTrue(true);
+            }
         }
 
 

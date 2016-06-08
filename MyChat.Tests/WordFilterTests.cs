@@ -71,7 +71,7 @@ namespace MindLink.Recruitment.MyChat.Tests
 
             List<Message> returnMessages = filter.Filter(messages, new string[] { content }).ToList();
             Assert.IsNotNull(returnMessages);
-            Assert.AreEqual(messages, returnMessages);
+            CollectionAssert.AreEqual(messages, returnMessages);
         }
 
 

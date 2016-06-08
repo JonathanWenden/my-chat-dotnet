@@ -28,9 +28,10 @@ namespace MindLink.Recruitment.MyChat.Filters
             {
                 return messages;
             }
-            else if (messages.Select(t => t.content == filterParameter[0]).Count() > 0)
+            else if (filterParameter.Intersect(messages.Select(t => t.content)).Any())
             {
-                return messages.Where(t => t.content.Contains(filterParameter[0]));
+                return messages.Where(t => t.content.Split(' ').Intersect(filterParameter).Any());
+                //return messages.Where(t => t.content.Contains(filterParameter[0]));
             }
             else
             {

@@ -58,14 +58,21 @@ namespace MindLink.Recruitment.MyChat.Tests
         [TestMethod]
         public void CannotFilterBasedOnNonExistantUser()
         {
-            UserFilter filter = new UserFilter();
-            var messages = ReadMessages();
-            string user = "John";
+            try
+            {
+                UserFilter filter = new UserFilter();
+                var messages = ReadMessages();
+                string user = "John";
 
-            List<Message> returnMessages = filter.Filter(messages, new string[] { user }).ToList();
-            Assert.IsNotNull(returnMessages);
-            Assert.AreNotEqual(messages, returnMessages);
-            Assert.IsTrue(returnMessages.Count == 0);
+                List<Message> returnMessages = filter.Filter(messages, new string[] { user }).ToList();
+                Assert.IsNotNull(returnMessages);
+                Assert.AreNotEqual(messages, returnMessages);
+                Assert.IsTrue(returnMessages.Count == 0);
+            }
+            catch (UserNotInChatException)
+            {
+                Assert.IsTrue(true);
+            }
         }
         
         [TestMethod]
